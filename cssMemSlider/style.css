@@ -59,13 +59,16 @@ body{
   border-radius: 50%;
   transition: all .2s ease-out;
   border: 1rem solid rgb(22, 22, 22);
+  
 }
 .bar:hover{
   opacity: 1;
   cursor: pointer;
+  background-color:white;
 }
 .bar:active{
-  background-color:rgb(207, 47, 127);
+  background-color:white;
+  margin-bottom: 1rem;
 }
 input[name="r"]{
   visibility: hidden;
@@ -118,9 +121,18 @@ opacity: 1;
 
 background-color: rgb(22, 22, 22);
 border: .3rem solid blue;
-cursor: unset;
+/* cursor: unset; */
 margin-top: .8rem;
 }
+
+#r1:checked ~ .slider-center .slider-control .navigation .b1:hover,
+#r2:checked ~ .slider-center .slider-control .navigation .b2:hover,
+#r3:checked ~ .slider-center .slider-control .navigation .b3:hover,
+#r4:checked ~ .slider-center .slider-control .navigation .b4:hover{
+  cursor: pointer;
+  /* border: .3rem solid white;   */
+}
+
 
 @media  (max-width: 1024px) {
 .citate {
